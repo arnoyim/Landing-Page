@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Start Page",
+  "version": "0.1",
+  "chrome_url_overrides": {
+    "newtab" : "startPage.html"
+  },
+  "background": {
+         "scripts":      ["eventPage.js"]
+  },
+  "permissions" : [
+    "geolocation",
+    "storage"
+  ]
+
+}
