@@ -3,9 +3,11 @@
   chrome.runtime.sendMessage ( {command: "geoLocate"}, function (response) {
     var lat = response.geoLocation[0];
     var long = response.geoLocation[1];
-    var urlLock = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long;
+    // Openweathermap api endpoint
+    var urlEndpoint = "http://api.openweathermap.org/data/2.5/weather?lat="+
+    lat + "&lon="+long;
     var key = "&appid=3053f56067cef8dccd853b31cdd28aae";
-    var openUrl = urlLock + key;
+    var openUrl = urlEndpoint + key;
     var xhr = new XMLHttpRequest();
     xhr.open("GET", openUrl , true);
     xhr.onreadystatechange = function () {

@@ -1,0 +1,30 @@
+{
+  "name": "Landing-Page",
+  "version": "0.0.1",
+  "description": "Landing page chrome extension",
+  "main": "js/app.js",
+  "dependencies": {
+    "flux": "*",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "envify": "*",
+    "react": "*",
+    "reactify": "*",
+    "watchify": "*"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d .",
+    "build": "browserify . | uglifyjs -cm > js/bundle.min.js"
+  },
+  "author": "Arno Yim",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}
