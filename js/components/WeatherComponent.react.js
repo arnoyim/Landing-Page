@@ -2,7 +2,7 @@ var React = require('react');
 var WeatherStore = require('../stores/WeatherStore');
 var FluxWeather = require('./FluxWeather.react');
 
-// Methond to retrieve state from Stores.
+// Method to retrieve state from Stores.
 
 function getWeatherState() {
   return {
@@ -10,8 +10,8 @@ function getWeatherState() {
   };
 }
 
-// Main Controller View
-var WeatherApp = React.createClass({
+// Weather Controller View.
+var WeatherComponent = React.createClass({
 
   getInitialState: function() {
     return getWeatherState();
@@ -27,7 +27,7 @@ var WeatherApp = React.createClass({
   // Rendering the Child components.
   render: function() {
     return (
-      <div className="weather-app">
+      <div className="weather">
       <FluxWeather weather={this.state.weather} />
       </div>
     );
@@ -40,4 +40,4 @@ var WeatherApp = React.createClass({
 
 });
 
-module.exports = WeatherApp;
+module.exports = WeatherComponent;

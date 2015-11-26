@@ -5,16 +5,19 @@ var FluxWeather = React.createClass({
   render: function() {
     var city = this.props.weather;
     var tempK;
+    var description;
     for (i in city.main){
       tempK = city.main["temp"];
     }
-    var tempF = (tempK - 273.15) * 1.80 + 32.00
+    var tempF = Math.round((tempK - 273.15) * 1.80 + 32.00);
+    for (i in city.weather) {
+      description = city.weather[0]['description']
+    }
     return (
         <div className="flux-weather">
-          <div className="flux-weather-detail">
             <h1 className="city">{city.name}</h1>
-            <p className="city-desc">{tempF}</p>
-          </div>
+            <p className="city-temp">{tempF} F</p>
+            <p className="city-desc">{description}</p>
         </div>
     );
   },
