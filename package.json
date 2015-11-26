@@ -1,20 +1,20 @@
 {
-  "name": "Landing-Page",
+  "name": "landingpage",
   "version": "0.0.1",
   "description": "Landing page chrome extension",
   "main": "js/app.js",
   "dependencies": {
-    "flux": "*",
+    "flux": "2.1.x",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "underscore": "*"
+    "underscore": "1.8.x"
   },
   "devDependencies": {
-    "browserify": "*",
-    "envify": "*",
-    "react": "*",
-    "reactify": "*",
-    "watchify": "*"
+    "browserify": "6.2.x",
+    "envify": "3.x.x",
+    "react": "^0.14.3",
+    "reactify": "0.15.x",
+    "watchify": "2.1.x"
   },
   "scripts": {
     "start": "watchify -o js/bundle.js -v -d .",
@@ -26,5 +26,18 @@
       "reactify",
       "envify"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arnoyim/Landing-Page.git"
+  },
+  "keywords": [
+    "landing",
+    "page"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnoyim/Landing-Page/issues"
+  },
+  "homepage": "https://github.com/arnoyim/Landing-Page"
 }
