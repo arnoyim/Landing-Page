@@ -6,11 +6,10 @@
     "newtab" : "startPage.html"
   },
   "background": {
-         "scripts":      ["eventPage.js"]
+         "scripts": ["eventPage.js"]
   },
   "permissions" : [
     "geolocation",
-    "identity",
     "storage"
   ]
 

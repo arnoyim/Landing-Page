@@ -8,18 +8,8 @@ var geoOptions = function () {
 var geoSuccess = function (position) {
   var lat = Math.round(position.coords.latitude*10000) / 10000;
   var long = Math.round(position.coords.longitude*10000) / 10000;
-  var newLocation = { geoLocation:[lat, long] };
-  var storedLocation;
-  storage.get('geoLocation', function(results){
-    storedLocation = results;
-    if (
-      newLocation['geoLocation'][0] != storedLocation['geoLocation'][0] &&
-      newLocation['geoLocation'][1] != storedLocation['geoLocation'][1]
-    ){
-      storage.set(newLocation);
-    };
-  });
-
+  var geoLocation = { geoLocation:[lat, long] };
+  storage.set(geoLocation);
 };
 
 var geoError = function(position) {

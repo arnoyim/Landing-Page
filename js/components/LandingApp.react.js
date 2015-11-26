@@ -1,5 +1,4 @@
 var React = require('react');
-var FluxLanding = require('./FluxLanding.react');
 var WeatherApi = require('../utils/WeatherApi');
 var WeatherComponent = require('../components/WeatherComponent.react');
 
