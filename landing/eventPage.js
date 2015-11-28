@@ -29,7 +29,8 @@ chrome.runtime.onMessage.addListener (
           storage.get('geoLocation', function(results){
             sendResponse(results);
           });
-          return true; // Needed because the response is asynchronous
-        }
+        return true; // Needed because the response is asynchronous
+
+      }
     }
 );

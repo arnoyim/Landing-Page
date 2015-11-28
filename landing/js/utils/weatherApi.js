@@ -13,8 +13,8 @@ module.exports = {
       var openUrl = urlEndpoint + key;
       var xhr = new XMLHttpRequest();
       xhr.open("GET", openUrl , true);
-      xhr.onreadystatechange = function () {
-        if(xhr.readyState == 4) {
+      xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4 && xhr.status == 200) {
           // JSON.parse does not evaluate the attacker's scripts.
           var data = JSON.parse(xhr.responseText);
           WeatherActions.receiveWeather(data);

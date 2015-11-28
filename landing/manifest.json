@@ -1,7 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Start Page",
+  "name": "landingpage",
   "version": "0.1",
+  "oauth2": {
+    "client_id": "1010157744697-4jrcdgfbimv050s7sdb8cq3ct2j47tfq.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar"
+    ]
+  },
+  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtY6/EFzfvid2hgtqFavAlGpF3j9ICQ79XnUNcGAidIBa8lNBCSuzCwNyk7t0UzZNPkEFKoTFR3+V2DgtrGmUu/GDkikxbcJIENCN2UebFmBC5LOFn5yRif7SGFpM8nVnwp/+kinBsFTfJVQkP4wBCgQ4R9LwcNwxn69FVWr+xx8cUcFok8taLW3+C/C5MUMcMjUvB7exWESkqsrGAobCuFJKZ8N17v5FluN+5z8AvAA0i0TzhHt/0f7eFi4KjijN9LnUec85XNh2+Pw+ETODtpbREY+l7ani1S+247mNkr8a6uliCcFmms19RBlX+s7PPPYTnA7MvZLX3j74gipWuwIDAQAB",
   "chrome_url_overrides": {
     "newtab" : "startPage.html"
   },
