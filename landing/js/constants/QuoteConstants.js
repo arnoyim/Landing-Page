@@ -2,5 +2,5 @@ var keyMirror = require('react/lib/keyMirror');
 
 // Define action constants
 module.exports = keyMirror({
-  RECEIVE_DATA: null    // Loads our weather data.
+  RECEIVE_QUOTE: null    // Loads our quote data.
 });

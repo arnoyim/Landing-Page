@@ -8,7 +8,7 @@ var QuoteActions = {
   // Receive inital quote data.
   receiveQuote: function(data) {
     AppDispatcher.handleAction({
-      actionType: QuoteConstants.RECEIVE_DATA,
+      actionType: QuoteConstants.RECEIVE_QUOTE,
       data:data
     })
   }

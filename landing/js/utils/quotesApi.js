@@ -3,7 +3,7 @@ var QuoteActions = require('../actions/QuoteActions');
 module.exports = {
   getQuoteData: function() {
     var urlEndpoint =
-    "https://andruxnet-random-famous-quotes.p.mashape.com/cat={category}";
+    "https://andruxnet-random-famous-quotes.p.mashape.com/cat=famous";
     var xhr = new XMLHttpRequest();
     xhr.open("POST", urlEndpoint, true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -16,6 +16,6 @@ module.exports = {
       }
     }
     xhr.send();
-  };
+  }
 
 }
